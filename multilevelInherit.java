@@ -5,19 +5,21 @@ class student1{
 }
 class student2 extends student1{
     void khata2(){
+        student1 S = new student1();
+        S.khata1();
         System.out.println("Load-shedding means the discontinuation of the ");
     }
 }
 class student3 extends student2{
     void khata3(){
+        student2 S = new student2();
+        S.khata2();
         System.out.println("Load-shedding means ");
     }
 }
 public class multilevelInherit {
     public static void main(String[] args) {
         student3 S = new student3();
-        S.khata1();
-        S.khata2();
         S.khata3();
     }
 }
