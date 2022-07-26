@@ -21,7 +21,7 @@ class Exam extends Student{ // sub class
         System.out.println("Mark: "+mark);
     }
 }
-class Result extends Exam{ // another sub class
+class Result extends Exam{ // sub class
     Student S = new Student();
     Exam E = new Exam();
     void getData(){
